@@ -8,11 +8,13 @@ namespace RockPaperScissors
 {
     class StubbornAI : IPlayer
     {
+        Random start;
         private int favoriteMove;
 
-        public StubbornAI(int favoriteMove)
+        public StubbornAI()
         {
-
+            start = new Random();
+            favoriteMove = start.Next(3);
         }
 
         public int NextMove()
@@ -22,7 +24,7 @@ namespace RockPaperScissors
 
         public void SaveResult(int myMove, int otherMove)
         {
-            //nothing goes here
+            favoriteMove = myMove;
         }
     }
 }

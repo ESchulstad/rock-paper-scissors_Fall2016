@@ -14,7 +14,7 @@ namespace RockPaperScissors
             // Add AIs by filling in lines like the ones below
             { "Random 1", new RandomAI() },
             { "Random 2", new RandomAI() },
-            { "Stubborn", new StubbornAI(1) },
+            { "Stubborn", new StubbornAI() },
             { "ShortAttention", new ShortAttentionSpanAI() },
         };
 
